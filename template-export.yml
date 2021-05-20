@@ -1,0 +1,16 @@
+AWSTemplateFormatVersion: 2010-09-09
+Description: nodejs-hello-world
+Transform:
+- AWS::Serverless-2016-10-31
+Resources:
+  helloFromLambdaFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      Handler: src/handlers/hello-from-lambda.helloFromLambdaHandler
+      Runtime: nodejs14.x
+      MemorySize: 128
+      Timeout: 100
+      Description: A Lambda function that returns a static string.
+      Policies:
+      - AWSLambdaBasicExecutionRole
+      CodeUri: s3://aws-sam-cli-managed-default-samclisourcebucket-jofksnx4ss9z/7dd32b02bbdf2b29487057f0d717e634
