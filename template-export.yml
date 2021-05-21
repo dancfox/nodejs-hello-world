@@ -13,4 +13,4 @@ Resources:
       Description: A Lambda function that returns a static string.
       Policies:
       - AWSLambdaBasicExecutionRole
-      CodeUri: s3://aws-sam-cli-managed-default-samclisourcebucket-jofksnx4ss9z/7dd32b02bbdf2b29487057f0d717e634
+      CodeUri: s3://aws-sam-cli-managed-default-samclisourcebucket-jofksnx4ss9z/b7a5454cd9e52183280106bb619bd60e
